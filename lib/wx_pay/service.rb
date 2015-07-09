@@ -22,7 +22,7 @@ module WxPay
       r
     end
 
-    GENERATE_APP_PAY_REQ_REQUIRED_FIELDS = %i(prepayid noncestr)
+    GENERATE_APP_PAY_REQ_REQUIRED_FIELDS = %w(prepayid noncestr)
     def self.generate_app_pay_req(params)
       params = {
         appid: WxPay.appid,
